@@ -1,5 +1,24 @@
 *{
-    font-family: "Comic Sans MS", cursive;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+input[type="button"]{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 40px;
+    background-color: red;
+    border-color: green;
+    border-width: 10px;
+    border-style: groove;
+    padding: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin: 10px;
+    color: blue;
+}
+
+input[type="button"]:hover{
+    border-color: brown;
+    background-color: green;
 }
 
 h1 {
@@ -190,4 +209,3 @@ form{
         color: cyan;
     }
 }
-

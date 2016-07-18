@@ -21,12 +21,13 @@ function displayLoadingScreen() {
     document.getElementById("loadingTrollFaceScreen").style.animationName = animationToUse;
 }
 
-function getImages(query) {
+function getImages(query, type) {
     displayLoadingScreen();
     $.post({
         url: "/lol",
         data: {
             text: query
+            type: type
         }
     }).done(function (httpData) {
         var imageCont = document.createElement("div");
@@ -47,9 +48,9 @@ function getImages(query) {
     });
 }
 
-function postForm() {
+function postForm(type) {
     if (document.getElementById("inputBox").value != "") {
-        getImages(document.getElementById("inputBox").value);
+        getImages(document.getElementById("inputBox").value, type);
     } else {
         alert("Enter a value");
     }

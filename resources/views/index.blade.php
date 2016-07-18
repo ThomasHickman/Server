@@ -31,9 +31,11 @@
             <blink class="desc">Chose the contense of you're mEme</blink>
             <img src="img/troll.png" alt="IcanHazCheesburger"
             width ="100" height="100" />
-            <form action="javascript: postForm()">
-                <input id="inputBox" type="text" class="input_box"/>
-            </form>
+            <input id="inputBox" type="text" class="input_box"/>
+            <div>
+                <input type="button" onclick="postForm('cats')" value="lolz"/>
+                <input type="button" onclick="postForm('doge')" value="wow"/>
+            </div>
             <div id="downloadedImageOuter" style="display: none">
                 <div style="font-size: 80px;color: purple">Your Imagz:</div>
                 <div id="downloadedImageInner">

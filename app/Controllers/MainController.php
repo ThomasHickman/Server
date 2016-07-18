@@ -44,7 +44,7 @@ class MainController extends Controller
      */
     public function generate(Container $container, Request $request)
     {
-        $doge = (bool) random_int(0, 1);
+        $doge = $request->get('type') == "doge"
 
         $inner = $container->make($doge ? DogeGenerator::class : CatGenerator::class);
 
